@@ -1,0 +1,114 @@
+.l-game-state { 
+  flex: 1;
+  display: flex; 
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4a483b;
+  color: #efefef;
+}
+
+.game-state-title {
+  flex: 0 20%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.game-state-title > p {
+  font-size: 5vw;
+}
+
+.game-state-counter {
+  flex: 0 70%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.game-state-counter_indicator{
+  flex: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-state-counter_indicator > div {
+  flex: 0 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-state-counter_indicator__year {
+  height: 1em;
+  width: 80%;
+  font-size: 3.5vw;
+}
+
+.game-state-counter_indicator__icon {
+  height: 4vw;
+  width: 4vw;
+  stroke: transparent;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  transition: 0.7s;  
+}
+
+.game-state-counter_indicator__icon > path {
+  fill: #cdccca;
+  transition: 0.7s;
+}
+
+.game-state-counter_indicator__bar {
+  flex: 0 100%;
+  height: 20%;
+  background-color: #4a483b;
+  border: 1px solid #ff9933;
+  box-shadow: inset -10px 0 10px 10px hsla(0,0%,0%,.25);
+  border-radius: 2px;
+}
+
+.game-state-counter_indicator__bar > div {
+  width: 1%;
+  height: 100%;
+  transition: 2s;
+}
+
+.is-item-shadowed{
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.is-indicator-bar-red{
+  background-image: linear-gradient(to right, red, red, #4a483b);
+}
+
+.is-indicator-bar-orange{
+  background-image: linear-gradient(to right, orange, orange, #4a483b);
+}
+
+.is-indicator-bar-yellow{
+  background-image: linear-gradient(to right, yellow, yellow, #4a483b);
+}
+
+.is-indicator-bar-green{
+  background-image: linear-gradient(to right, green, green, green, green, green, #4a483b);
+}
+
+.is-indicator-icon-orange {
+  stroke: #ff6600;
+  stroke-width: 10;
+  -webkit-filter: drop-shadow( 0px 0px 8px rgba(255, 102, 0, .7));
+  filter: drop-shadow( 0px 0px 8px rgba(255, 102, 0, .7));
+}
+
+.is-indicator-icon-red {
+  stroke: #b30000;
+  stroke-width: 10;
+  -webkit-filter: drop-shadow( 0px 0px 8px rgba(179, 0, 0, .7));
+  filter: drop-shadow( 0px 0px 8px rgba(179, 0, 0, .7));
+}

@@ -1,0 +1,38 @@
+.l-welcome-screen {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  width: 60%;
+  background-color: #efefef;
+  color: #39372d;
+}
+
+.l-welcome-screen > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.welcome-screen_desc{
+  font-size: 2vw;
+}
+
+.welcome-screen_button{
+  color: blue;
+}
+
+.welcome-screen_button:hover{
+  color: red;
+}
+
+.welcome-screen_footer{
+  margin-bottom: 20px;
+  font-size: 1.1vw;
+}
+
+

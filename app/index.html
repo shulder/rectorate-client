@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>РЕКТОРАТ</title>
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+</head>
+<body>
+  <div class="l-welcome-screen">
+    <div>
+      <h1>РЕКТОРАТ</h1>
+      <p class="welcome-screen_desc">Попробуй удержаться на посту ректора КПИ и привести дружную семью политехников к новым вершинам.</p> 
+    </div>
+    <div>
+      <button class="welcome-screen_button" id="button-start" >Хватаемся за кресло!</button>
+      <footer class="welcome-screen_footer">
+        <p>*КПИ - какой-то политехнический институт.</p>
+        <p>Все персонажи и события вымышлены. Любые совпадения случайны.</p>
+      </footer>
+    </div> 
+  </div>
+  <div class="l-game-state is-block-hidden is-item-shadowed">
+    <div class="game-state-title">
+      <img class="is-item-shadowed" src="img/logo.png">
+      <p class="is-item-shadowed" >РЕКТОРАТ</p>
+    </div>
+    <div class="game-state-counter">  
+      <div class="game-state-counter_indicator">
+        <svg class="game-state-counter_indicator__icon is-item-shadowed" id="year-icon" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 96v80h-96v-80h96zM176 352v-80h96v80h-96zm96 32v80h-96v-80h96zm-128-32H48v-80h96v80zm32-112v-80h96v80h-96zm128 32h96v80h-96v-80zM144 160v80H48v-80h96zM48 458v-74h96v80H54c-3.3 0-6-2.7-6-6zm346 6h-90v-80h96v74c0 3.3-2.7 6-6 6z">
+          </path>
+        </svg>
+        <div>
+          <span class="game-state-counter_indicator__year is-item-shadowed" id="year">1992 год</span>
+        </div>
+      </div>
+      <div class="game-state-counter_indicator">
+        <svg class="game-state-counter_indicator__icon is-item-shadowed" id="campus-icon" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M501.62 92.11L267.24 2.04a31.958 31.958 0 0 0-22.47 0L10.38 92.11A16.001 16.001 0 0 0 0 107.09V144c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-36.91c0-6.67-4.14-12.64-10.38-14.98zM64 192v160H48c-8.84 0-16 7.16-16 16v48h448v-48c0-8.84-7.16-16-16-16h-16V192h-64v160h-96V192h-64v160h-96V192H64zm432 256H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z">
+          </path>
+        </svg>  
+        <div class="is-item-shadowed">
+          <div class="game-state-counter_indicator__bar"><div id="campus"></div></div>
+        </div>
+      </div>
+      <div class="game-state-counter_indicator">
+        <svg class="game-state-counter_indicator__icon is-item-shadowed" id="social-icon" viewBox="0 0 448 512">
+          <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+          </path>
+        </svg>
+        <div class="is-item-shadowed">
+          <div class="game-state-counter_indicator__bar"><div id="social"></div></div>
+        </div>
+      </div>
+      <div class="game-state-counter_indicator">
+        <svg class="game-state-counter_indicator__icon is-item-shadowed" id="money-icon" viewBox="0 0 288 512">
+          <path fill="currentColor" d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+          </path>
+        </svg>
+        <div class="is-item-shadowed">
+          <div class="game-state-counter_indicator__bar"><div id="money"></div></div>
+        </div>
+      </div>
+      <div class="game-state-counter_indicator">
+        <svg class="game-state-counter_indicator__icon is-item-shadowed" id="reputation-icon" viewBox="0 0 576 512">
+          <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">    
+          </path>
+        </svg>
+        <div class="is-item-shadowed">
+          <div class="game-state-counter_indicator__bar"><div id="reputation"></div></div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="l-game-step is-block-hidden">
+    <div class="game-step">
+      <div class="game-step_card">
+        <div class="game-step_card__info">
+          <img id="image" src="">
+          <p><span id="name"></span></p>
+        </div>
+        <p class="game-step_card__text" id="text"></p>
+      </div>
+      <div class="game-step_options" id="options">
+        <button id="button-left"></button>
+        <button id="button-right"></button>
+      </div>
+    </div>
+  </div>
+  <script src="build/bundle.js" defer></script>
+</body>
+</html>

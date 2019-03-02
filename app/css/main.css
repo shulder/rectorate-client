@@ -1,0 +1,64 @@
+@import url('reset.css');
+@import url('welcome_screen.css');
+@import url('game_state.css');
+@import url('game_step.css');
+
+/*BASE RULES*/
+*{font-family: Neucha;}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  background-color: #efefef;
+}
+
+p, span, button {
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+h1 {
+  margin-top: 70px;
+  font-size: 8vw;
+  color: #2c2921;
+}
+
+button {
+  margin: auto;
+  background-color: transparent;
+  font-size: 3vw;
+  min-height: 1em;
+  outline: 0;
+  border: 0;
+  color: #4a483b;
+  transition: 1s;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button:hover{
+  color: red;
+}
+
+img{
+  height: 8vw;
+  width: 6vw;
+}
+
+.is-block-hidden{
+  display: none !important;
+}
+
+
+
+
+
+
+
