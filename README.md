@@ -5,5 +5,5 @@ Written in ES6 with a use of flexboxes.
 
 Axios is used for fetching data, Webpack is used for bundling source files.
 
-Also project includes some tricky work with SVG's.
+Also project includes some tricky work with SVG's and simple CSS animations(e.g transitions and time-based properties changing).
 
